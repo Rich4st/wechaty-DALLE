@@ -37,7 +37,7 @@ const onLogout = async (user: any, reason: any) => {
 }
 
 const configuration = new Configuration({
-  apiKey: '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'
+  apiKey: process.env.API_KEY,
 })
 
 const openai = new OpenAIApi(configuration);
